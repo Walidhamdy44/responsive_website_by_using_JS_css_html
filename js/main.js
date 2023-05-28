@@ -12,7 +12,7 @@ let imgs = [
 let background = document.getElementById("landing");
 let counter = setInterval(() => {
   let randomNumber = Math.floor(Math.random() * imgs.length);
-  background.style.backgroundImage = `url("../imgs/${imgs[randomNumber]}")`;
+  background.style.backgroundImage = `url("imgs/${imgs[randomNumber]}")`;
 }, 10000);
 
 // ______________________________________
@@ -62,7 +62,7 @@ backbtn1.onclick = function () {
   backbtn2.classList.remove("active");
   setInterval(() => {
     let randomNumber = Math.floor(Math.random() * imgs.length);
-    background.style.backgroundImage = `url("../imgs/${imgs[randomNumber]}")`;
+    background.style.backgroundImage = `url("imgs/${imgs[randomNumber]}")`;
   }, 10000);
 };
 backbtn2.onclick = function () {
