@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="js" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design by JS</title>
+    <!-- ملفات ال css -->
+    <!-- css files -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start setting icon -->
+    <div class="setting">
+      <div class="iconlopo">
+        <i class="fa-solid fa-gear" id="icon"></i>
+      </div>
+      <div class="setting-option">
+        <div class="color">
+          <span>Select Color</span>
+          <ul class="color-list">
+            <li data-color="#4caf50"></li>
+            <li data-color="#a42527"></li>
+            <li data-color="#00ffff"></li>
+            <li data-color="#e57734"></li>
+            <li data-color="#6da5c0"></li>
+          </ul>
+        </div>
+        <div class="background">
+          <h4>Random Backgrounds</h4>
+          <span class="active yes" data-back="yes">Yes</span>
+          <span data-back="no" class="no">No</span>
+        </div>
+        <div class="bollits">
+          <h4>Show Bollits</h4>
+          <span class="active yes">Yes</span>
+          <span class="no">No</span>
+        </div>
+        <button id="reset">Reset Options</button>
+      </div>
+    </div>
+    <!-- end setting icon -->
+    <!-- start Bollits -->
+    <div class="bollits-icon">
+      <ul>
+        <li data-link=".skills"></li>
+        <li data-link=".gallary"></li>
+        <li data-link=".timeline"></li>
+        <li data-link=".testimonials"></li>
+        <li data-link=".about"></li>
+      </ul>
+    </div>
+    <!-- end Bollits -->
+    <!-- start header  -->
+    <div class="landing" id="landing">
+      <div class="ovarlay"></div>
+      <div class="nav">
+        <div class="logo">
+          <span>My First JS Design</span>
+        </div>
+        <div class="links-container">
+          <ul class="links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallary">Gallary</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="contant">
+        <h2>I Am A <span>FrontEnd</span> Developer</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+          odit nihil ullam nesciunt quidem iste
+        </p>
+      </div>
+    </div>
+    <!-- end header  -->
+    <!-- start about us -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="text">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            ipsum, tenetur dolores esse magni ratione distinctio! Quod iusto
+            neque fuga, maxime quos nostrum quibusdam dicta deserunt blanditiis
+            non voluptate id?
+          </p>
+        </div>
+        <div class="imge">
+          <img src="imgs/istockphoto-1086341762-612x612.jpg" alt="seo" />
+        </div>
+      </div>
+    </div>
+    <!-- end about us -->
+    <!-- start Skills -->
+    <div class="skills" id="skills">
+      <h2 class="main-title">My Skills</h2>
+      <div class="container">
+        <div class="box box0">
+          <div class="skill-name">Html</div>
+          <div class="prog">
+            <span data-prog="90%"></span>
+          </div>
+        </div>
+        <div class="box box1">
+          <div class="skill-name">Css</div>
+          <div class="prog">
+            <span data-prog="83%"></span>
+          </div>
+        </div>
+        <div class="box box2">
+          <div class="skill-name">JavaScript</div>
+          <div class="prog">
+            <span data-prog="76%"></span>
+          </div>
+        </div>
+        <div class="box box3">
+          <div class="skill-name">BootStrap</div>
+          <div class="prog">
+            <span data-prog="92%"></span>
+          </div>
+        </div>
+        <div class="box box4">
+          <div class="skill-name">Tillwand Css</div>
+          <div class="prog">
+            <span data-prog="71%"></span>
+          </div>
+        </div>
+        <div class="box box5">
+          <div class="skill-name">SQL</div>
+          <div class="prog">
+            <span data-prog="65%"></span>
+          </div>
+        </div>
+        <div class="box box6">
+          <div class="skill-name">ES6</div>
+          <div class="prog">
+            <span data-prog="90%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Skills -->
+    <!-- start gallary -->
+    <div class="gallary" id="gallary">
+      <h2 class="main-title">MY Gallary</h2>
+      <div class="container">
+        <div class="box">
+          <div class="imge">
+            <img src="imgs/0dg5rw0rk6rry9lf.jpg" alt="Everest" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img
+              src="imgs/109-desktop-pc-wallpapers-space-4k-hd.jpg"
+              alt="imge for space"
+            />
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img
+              src="imgs/407-desktop-pc-wallpapers-space-4k-hd-.jpg"
+              alt="imge Anothor space"
+            />
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img src="imgs/ocean-3605547_1280.jpg" alt="imge for ocean" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img
+              src="imgs/space-art-fantasy-art-sky-clouds-wallpaper-preview.jpg"
+              alt="space art fantasy "
+            />
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img src="imgs/t6w.jpg" alt="THE Fav Imge" />
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img
+              src="imgs/space-art-fantasy-art-sky-clouds-wallpaper-preview.jpg"
+              alt="imge Greeet"
+            />
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img
+              src="imgs/407-desktop-pc-wallpapers-space-4k-hd-.jpg"
+              alt="Amazing Imge"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end gallary -->
+    <!-- Start Timeline -->
+    <div class="timeline" id="timeline">
+      <div class="container">
+        <div class="timeline-content">
+          <div class="year">2023</div>
+          <div class="left">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="right">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="year">2022</div>
+          <div class="left">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left">
+            <div class="content">
+              <h3>Testing Heading</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Deleniti ex molestiae illo nisi quaerat veniam beatae aliquid
+                eligendi. Aliquid tenetur quas ex, sequi porro nam commodi
+                placeat maxime nobis quam?
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Timeline -->
+    <!-- start Features -->
+    <div class="Features" id="features">
+      <h2 class="main-title">My Features</h2>
+      <div class="container">
+        <div class="box">
+          <div class="imge">
+            <img
+              src="imgs/close-up-image-programer-working-his-desk-office.jpg"
+              alt="seo"
+            />
+          </div>
+          <div class="text">
+            <h3>Development</h3>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img src="imgs/showing-tablet-s-blank-screen.jpg" alt="seo" />
+          </div>
+          <div class="text">
+            <h3>Marketing</h3>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img
+              src="imgs/cloud-data-storage-rack-concept-glass-cube-cloudscape-digital-metaverse-server-global-network-business-web-database-backup-computer-private-infrastructure-technology.jpg"
+              alt="seo"
+            />
+          </div>
+          <div class="text">
+            <h3>Hosting</h3>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img
+              src="imgs/close-up-image-programer-working-his-desk-office.jpg"
+              alt="seo"
+            />
+          </div>
+          <div class="text">
+            <h3>Mobile Develope</h3>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img
+              src="imgs/digital-cloud-data-storage-digital-concept-cloudscape-digital-online-service-global-network-database-backup-computer-infrastructure-technology-solution.jpg"
+              alt="seo"
+            />
+          </div>
+          <div class="text">
+            <h3>Cloud and Servers</h3>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="imge">
+            <img src="imgs/hand-arrange-white-letters-as-seo.jpg" alt="seo" />
+          </div>
+          <div class="text">
+            <h3>SEO</h3>
+            <p>
+              We are professional marketeers, we will do anything you imagine in
+              no time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start Features -->
+    <!-- start Testimonials -->
+    <div class="testimonials" id="testimonials">
+      <h2 class="main-title">Testimonials</h2>
+      <div class="container">
+        <div class="box">
+          <p>
+            Iam very happy with the product its amazing and i recieve it very
+            fast and the price was amazing.
+          </p>
+          <div class="imge">
+            <img src="imgs/man.png" alt="ocean" />
+            <div class="text">
+              <span>Walid Hamdy</span>
+              <span>CEO At Company</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p>
+            Iam very happy with the product its amazing and i recieve it very
+            fast and the price was amazing.
+          </p>
+          <div class="imge">
+            <img src="imgs/gamer.png" alt="s" />
+            <div class="text">
+              <span>Ahmed Osama</span>
+              <span>CEO At Company</span>
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <p>
+            Iam very happy with the product its amazing and i recieve it very
+            fast and the price was amazing.
+          </p>
+          <div class="imge">
+            <img src="imgs/professor.png" alt="ks" />
+            <div class="text">
+              <span>Sayed Amir</span>
+              <span>CEO At Company</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end Testimonials -->
+    <!-- start contact us -->
+    <div class="contact-us" id="contact">
+      <h2 class="main-title">Contact Us</h2>
+      <div class="container">
+        <form>
+          <div class="inputs">
+            <input type="text" name="name" id="name" placeholder="Your Name" />
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Your Phone"
+            />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="subject"
+            />
+          </div>
+          <div class="massage-area">
+            <textarea
+              name="massage"
+              id="massage"
+              cols="30"
+              rows="10"
+              placeholder="Your Massage"
+            ></textarea>
+            <input type="submit" id="btnSend" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- end contact us -->
+    <!-- start footer -->
+    <div class="footer">
+      <p>Created By Walid Hamdy <i class="fa-solid fa-heart"></i></p>
+      <span> CopyRiting &copy; <span class="year">2023</span></span>
+    </div>
+    <!-- end footer -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
